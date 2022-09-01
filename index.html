@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot, Nuke, Cockroach</title>
+</head>
+<body>
+    <h2>Let's play Foot, Nuke, Cockroach</h2>
+    <form action="/process" method="post">
+        <select name="selected">
+            <option value="foot">Foot</option>
+            <option value="nuke">Nuke</option>
+            <option value="cockroach">Cockroach</option>
+        </select>
+        <button>Play</button>
+    </form>
+    <h3>Results: {{session.results}}</h3>
+    <h4>Computer chose: {{session.computer_choice}}</h4>
+    <h4>You chose: {{session.you_chose}}</h4>
+    <form action="/reset">
+        <button>Reset</button>
+    </form>
+</body>
+</html>
